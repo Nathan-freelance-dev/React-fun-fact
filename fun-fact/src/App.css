@@ -3,20 +3,93 @@
   position: relative;
   background-color: #282D35;
   height: 100vh;
+  overflow: hidden;
+  width: 100vw;
 }
 
 body {
   overflow: hidden;
 }
 
+main {
+  margin: 0 50px;
+}
+
+main h1 {
+  color: white;
+  font-size: 3rem;
+  margin-top: 5%;
+}
+
+ul {
+  color: white;
+  font-size: 1.5em;
+}
+
+li::marker {
+  color: #61dafb;
+}
+
+li {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #21222A;
+  padding: 15px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+footer span {
+  color: white;
+  opacity: 0.3;
+}
+
 .App-logo {
-  height: 100vmin;
+  height: 70vmin;
   pointer-events: none;
   position: absolute;
-  right: -35%;
+  right: -23%;
   opacity: 0.2;
   filter: grayscale(1);
-  top: 0%;
+  top: 15%;
+}
+
+@media screen and (max-width: 892px) {
+  .App-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .App-header {
+    padding: 0px 10px !important;
+  }
+
+  .App-header img {
+    width: 10%;
+  }
+
+  main {
+    margin: 0px 10px ;
+  }
+
+  main h1 {
+    font-size: 2rem;
+    margin-top: 15%;
+  }
+
+  ul {
+    font-size: 1.2rem;
+  }
+
+  li {
+    margin-left: 0%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
